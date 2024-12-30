@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+.logo-img{
+    width: 170px;
+    margin-top: 30px;
+}
+
+
+.hero1{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)),url(./assets/hero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.login-form{
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 5px 5px 0px 0px;
+    padding: 20px 30px;
+    width: 35%;
+   display: grid;
+   place-content: center;
+    
+}
+
+.login-form form .form-input{
+    width: 330px;
+    padding: 13px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: rgb(24, 23, 23);
+    outline: none;
+    color: white;
+}
+
+.login-form form .sign{
+    width: 330px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    font-size: large;
+    font-weight: 600;
+    margin-bottom: 10px
+}
+
+.signbtn{
+    width: 330px;
+    background-color: rgb(51, 50, 50);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    font-size: large;
+    font-weight: 600;
+    margin-bottom: 10px
+}
+
+.login-form form a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+}
+
+.remember{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.signupnow{
+    font-size: 16px;
+}
+
+@media (max-width:425px){
+    .hero1{
+        background-image: none;
+        background-color: black;
+    }
+    .logo-img{
+        width: 100px;
+    }
+
+}
+
+@media (max-width:768px) and (min-width:426px){
+    .login-form{
+        width: 65%;
+    }
+    .logo-img{
+        width: 100px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:1024px) and (min-width:769px){
+    .logo-img{
+        width: 150px;
+    }
+
+    .login-form{
+        width: 50%;
+    }
+}
